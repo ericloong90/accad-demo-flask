@@ -2,7 +2,8 @@
 
 echo "Stopping existing Flask app..."
 
-PIDS=$(pgrep -f "python3 app.py")
+# Find matching PIDs owned by ec2-user
+PIDS=$(pgrep -u $(whoami) -f "python3 app.py")
 
 if [ -z "$PIDS" ]; then
   echo "No Flask app running."
