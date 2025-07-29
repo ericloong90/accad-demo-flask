@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /usr/app/accad-demo-flask
+    destination: /home/ec2-user/accad-demo-flask
 hooks:
   ApplicationStop:
     - location: scripts/stop-server.sh

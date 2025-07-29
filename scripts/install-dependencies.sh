@@ -3,7 +3,7 @@ set -e
 
 echo "Installing dependencies..."
 
-cd /usr/app/accad-demo-flask
+cd /home/ec2-user/accad-demo-flask
 
 if [ ! -d "venv" ]; then
   python3 -m venv venv
