@@ -11,7 +11,7 @@ hooks:
   BeforeInstall:
     - location: scripts/install-dependencies.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: scripts/start-server.sh
       timeout: 60
